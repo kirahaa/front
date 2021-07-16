@@ -14,13 +14,25 @@
     <script>
         $(function(){
             $("#btn").click(function(){
-                alert("test2");
+                // alert("test2");
+                $("#box").stop().animate({
+                    "left":"500px"
+                },1000)
             })
         })
     </script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: darkgreen;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
     <input type="button" value="click" onclick="abc()">
     <input type="button" id="btn" value="test">
+    <div class="box" id="box"></div>
 </body>
 </html>
